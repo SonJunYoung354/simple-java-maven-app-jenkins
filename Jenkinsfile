@@ -16,7 +16,8 @@ pipeline {
                    junit 'target/surefire-reports/*.xml'
                }
             }
-        stage('build test')
+        }
+        stage('build test') {
            steps {
                sh 'mvn compile'
            }
