@@ -21,9 +21,6 @@ pipeline {
            steps {
                sh 'mvn compile'
            }
-           steps {
-               sh 'mvn clean'
-           }
         }
     }
 }
