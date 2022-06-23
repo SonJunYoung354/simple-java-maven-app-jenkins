@@ -17,5 +17,13 @@ pipeline {
                }
             }
         }
+        stage('build test')
+           steps {
+               sh 'mvn compile'
+           }
+           steps {
+               sh 'mvn clean'
+           }
     }
 }
+
